@@ -3,6 +3,7 @@ import {View,Text,Button} from 'react-native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
 import { Styles } from '../components/Styles';
+import { Welcome } from '../components/Welcome';
 
 
 type RootStackParamList = {
@@ -18,9 +19,7 @@ export default function HomeScreen(){
 
     return(
         <View style={Styles.container}>
-            <Text style={Styles.title}>
-                Bem-Vindo!
-            </Text>
+            <Welcome />
             <Button title='Ir para Perfil'
             onPress={() => navigation.navigate('Profile')}/>
         </View>
