@@ -19,7 +19,7 @@ export default function HomeScreen(){
 
     return(
         <View style={Styles.container}>
-            <Welcome />
+            <Welcome name='Eduardo' age={28} />
             <Button title='Ir para Perfil'
             onPress={() => navigation.navigate('Profile')}/>
         </View>
